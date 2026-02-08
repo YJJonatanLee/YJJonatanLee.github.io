@@ -44,7 +44,13 @@ AI/ML 엔지니어 이영준의 웹 이력서입니다. Jekyll과 GitHub Pages�
 ├── assets/
 │   └── css/
 │       └── style.css       # 커스텀 스타일
+├── docs/                    # 📚 프로젝트 문서
+│   ├── DEPLOYMENT.md       # 배포 가이드
+│   ├── CONTENT_GUIDE.md    # 콘텐츠 수정 가이드
+│   └── TODO.md             # 작업 목록
 ├── index.html              # 메인 페이지
+├── robots.txt              # 검색 엔진 크롤러 설정
+├── sitemap.xml             # 사이트맵
 ├── Gemfile                 # Ruby 의존성
 └── README.md               # 프로젝트 문서
 ```
@@ -70,6 +76,16 @@ bundle exec jekyll serve
 ```
 
 `http://localhost:4000`에서 확인하실 수 있습니다.
+
+---
+
+## 📚 문서
+
+자세한 가이드는 `docs` 폴더를 참조하세요:
+
+- **[배포 가이드](docs/DEPLOYMENT.md)** - GitHub Pages 배포 방법
+- **[콘텐츠 관리 가이드](docs/CONTENT_GUIDE.md)** - YAML 파일 수정 방법
+- **[작업 목록](docs/TODO.md)** - 프로젝트 진행 상황
 
 ---
 
