@@ -1,0 +1,11 @@
+- name: "이메일"
+  icon: "email"
+  url: "mailto:younghe42286@gmail.com"
+
+- name: "GitHub"
+  icon: "github"
+  url: "https://github.com/YJJonatanLee"
+
+- name: "전화번호"
+  icon: "phone"
+  url: "tel:010-8939-4220"

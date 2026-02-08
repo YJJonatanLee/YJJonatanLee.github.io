@@ -1,0 +1,23 @@
+- company: "㈜ 바이브컴퍼니"
+  division: "디지털서비스 혁신본부 데이터기술팀"
+  position: "사원 / 매니저"
+  period: "2021.03 - 2022.03"
+  duration: "1년 1개월"
+  description: "응용 소프트웨어 개발 및 공급업 (AI 솔루션, 빅데이터 AI 플랫폼)"
+  projects:
+    - name: "세종시 자율주행 빅데이터 관제시스템 구축"
+      period: "2021.03 - 2021.09"
+      role: "차선 인식 모델 개발"
+      tasks:
+        - "Lanenet 모델을 활용한 세종시 회전교차로 인식모델 구현"
+        - "세종시 회전교차로 차선인식 데이터셋 구축 참여"
+        - "회전교차로 차선인식 모델 관련 리서치"
+        - "구현된 회전교차로 인식모델 고도화, 유지보수 참여"
+      tech: "Python, PyTorch, Computer Vision, Deep Learning"
+
+    - name: "조달청 차세대 나라장터 구축 사업"
+      period: "2021.09 - 2022.01"
+      role: "AI 플랫폼 개발"
+      tasks:
+        - "조달청 나라장터 구축 사업에서 AI 플랫폼 개발 참여"
+      tech: "Python, PyTorch, scikit-learn, Machine Learning"

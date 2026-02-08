@@ -1,0 +1,23 @@
+certifications:
+  - name: "SQL 개발자"
+    issuer: "한국 데이터산업 진흥원"
+    date: "2025.06"
+
+awards:
+  - name: "기상청 빅데이터 콘테스트 우수상"
+    issuer: "기상청"
+    date: "2019"
+    description: "랄라블라 수요량 예측 모델: 2030대 여성 고객을 중심으로"
+
+other_experiences:
+  - title: "인공지능 부트캠프 보조강사"
+    organization: "패스트캠퍼스 커널아카데미"
+    period: "2025.09 - 재직중"
+    description: "미니 프로젝트 진행, 수업 자료 준비, 수업 관련 질문 답변, 수강생 상담"
+
+  - title: "다음소프트(현 바이브컴퍼니) 인턴"
+    organization: "다음소프트 AI 인사이트팀"
+    period: "2019.09 - 2019.12"
+    description: |
+      데이터 분석 업무 수행. Social Metrics(현 썸트렌드)를 통해 정치, 사회, 경제 관련 이슈 키워드 추출,
+      지역 관광 관련 마케팅 키워드 추출. 인턴 최종 프로젝트로 교육 키워드 분석 보고서 작성.

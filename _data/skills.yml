@@ -1,0 +1,38 @@
+categories:
+  - category: "프로그래밍 언어"
+    skills:
+      - name: "Python"
+        level: 90
+      - name: "SQL"
+        level: 80
+
+  - category: "머신러닝 & 딥러닝"
+    skills:
+      - name: "PyTorch"
+        level: 85
+      - name: "scikit-learn"
+        level: 85
+      - name: "XGBoost"
+        level: 80
+      - name: "Random Forest"
+        level: 80
+
+  - category: "AI 분야"
+    skills:
+      - name: "Computer Vision"
+        level: 85
+      - name: "Natural Language Processing"
+        level: 85
+      - name: "LLM & AI Agents"
+        level: 80
+
+  - category: "프레임워크 & 도구"
+    skills:
+      - name: "Django"
+        level: 70
+      - name: "LangChain"
+        level: 75
+      - name: "Label Studio"
+        level: 75
+      - name: "Git"
+        level: 85
