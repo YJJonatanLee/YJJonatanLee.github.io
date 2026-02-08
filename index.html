@@ -3,35 +3,74 @@ layout: none
 ---
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="이영준">
+  <meta name="keywords" content="이영준, AI Engineer, ML Engineer, 인공지능, 머신러닝, 딥러닝, NLP, Computer Vision, 자연어처리, 컴퓨터비전">
   <title>{{ site.title }}</title>
-  
-  <!-- Google Fonts -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:title" content="{{ site.title }}">
+  <meta property="twitter:description" content="{{ site.description }}">
+  <meta property="twitter:image" content="{{ site.url }}/assets/images/og-image.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}">
+
+  <!-- Google Fonts - Preload for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "이영준",
+    "jobTitle": "AI/ML Engineer",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "email": "younghe42286@gmail.com",
+    "sameAs": [
+      "https://github.com/YJJonatanLee"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <!-- Profile Image (placeholder for now) -->
-      <div style="width: 180px; height: 180px; margin: 0 auto 2rem; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); border: 4px solid #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);"></div>
-      
+      <div
+        style="width: 180px; height: 180px; margin: 0 auto 2rem; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); border: 4px solid #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);">
+      </div>
+
       <h1>이영준</h1>
       <p class="subtitle">AI/ML Engineer</p>
       <p class="description">
         머신러닝, 딥러닝, 자연어처리, 컴퓨터 비전 분야의 프로젝트 경험을 보유한 AI/ML 엔지니어입니다.<br>
         데이터 분석부터 AI 모델 개발까지 end-to-end 프로젝트 수행 경험이 있습니다.
       </p>
-      
+
       <!-- Social Links -->
       <div class="social-links">
         {% for link in site.data.links %}
@@ -42,7 +81,7 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Education Section -->
   <section class="section" id="education">
     <div class="container">
@@ -64,7 +103,7 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Career Section -->
   <section class="section" id="career">
     <div class="container">
@@ -82,11 +121,12 @@ layout: none
         </div>
         <div class="card-content">
           <p>{{ job.description }}</p>
-          
+
           {% if job.projects %}
           <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--accent-primary);">주요 프로젝트</h4>
           {% for project in job.projects %}
-          <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border-left: 3px solid var(--accent-primary);">
+          <div
+            style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border-left: 3px solid var(--accent-primary);">
             <h5 style="color: var(--text-primary); margin-bottom: 0.5rem;">{{ project.name }}</h5>
             <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
               📅 {{ project.period }} | 🎯 {{ project.role }}
@@ -110,7 +150,7 @@ layout: none
       {% endfor %}
     </div>
   </section>
-  
+
   <!-- Skills Section -->
   <section class="section" id="skills">
     <div class="container">
@@ -135,7 +175,7 @@ layout: none
       {% endfor %}
     </div>
   </section>
-  
+
   <!-- Projects Section -->
   <section class="section" id="projects">
     <div class="container">
@@ -157,7 +197,8 @@ layout: none
               <span class="card-meta-item">📅 {{ project.period }}</span>
             </div>
             {% if project.role %}
-            <div style="margin-top: 0.5rem; padding: 0.5rem; background: rgba(139, 92, 246, 0.1); border-radius: 6px; font-size: 0.9rem; color: var(--accent-secondary);">
+            <div
+              style="margin-top: 0.5rem; padding: 0.5rem; background: rgba(139, 92, 246, 0.1); border-radius: 6px; font-size: 0.9rem; color: var(--accent-secondary);">
               💼 {{ project.role }}
             </div>
             {% endif %}
@@ -185,7 +226,7 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Publications Section -->
   <section class="section" id="publications">
     <div class="container">
@@ -225,12 +266,12 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Awards & Certifications Section -->
   <section class="section" id="additional">
     <div class="container">
       <h2 class="section-title">자격증 & 수상</h2>
-      
+
       <div style="margin-bottom: 3rem;">
         <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">🏆 수상</h3>
         <div class="cards-grid">
@@ -248,7 +289,7 @@ layout: none
           {% endfor %}
         </div>
       </div>
-      
+
       <div>
         <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">📜 자격증</h3>
         <div class="cards-grid">
@@ -265,7 +306,7 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Other Experiences Section -->
   <section class="section" id="other">
     <div class="container">
@@ -288,7 +329,7 @@ layout: none
       </div>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -296,7 +337,7 @@ layout: none
       <p style="margin-top: 0.5rem;">Built with Jekyll & GitHub Pages</p>
     </div>
   </footer>
-  
+
   <!-- Scroll Animation Script -->
   <script>
     // Intersection Observer for scroll animations
@@ -304,7 +345,7 @@ layout: none
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -312,13 +353,13 @@ layout: none
         }
       });
     }, observerOptions);
-    
+
     // Observe all cards and sections
     document.querySelectorAll('.card, .section').forEach(el => {
       el.classList.add('fade-in');
       observer.observe(el);
     });
-    
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -333,6 +374,7 @@ layout: none
       });
     });
   </script>
-  
+
 </body>
+
 </html>

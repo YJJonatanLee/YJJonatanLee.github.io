@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yjjonatanlee.github.io/sitemap.xml
