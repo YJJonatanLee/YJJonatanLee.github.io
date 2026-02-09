@@ -5,10 +5,10 @@
   type: "석사 학위 논문"
   organization: "국민대학교"
 
-- title: "KcELECTRA를 활용한 혐오성 댓글 분류"
+- title: "Classification of Hate Comments in News Articles using the BERT Model"
   authors: "이영준 외"
   year: 2024
-  venue: "KJCCS (한국컴퓨터종합학술대회)"
+  venue: "KJCCS (Korea-Japan Joint Workshop on Complex Communication Sciences)"
   type: "포스터 발표"
 
 - title: "KcELECTRA를 활용한 혐오성 댓글 분류"
